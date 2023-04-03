@@ -3,7 +3,9 @@
 Developed a weather forecasting website which can be used to tell about weather condition of any location you want.
 It is implemented using NodeJs.
 
-
+## Screenshots
+![Screen Shot 1](https://lh3.googleusercontent.com/OUmWEiM5iuCFa7QUpBtranSiFKUdNEXcwc43OGxxCoVU1fT-IXsAbjKQqvjirVIEfpwLt-nKlkRuXuKMv-gkS5gq5-isbKousqkf_48?raw=true "Image 1")
+![Screen Shot 2](https://lh3.googleusercontent.com/0TW2KSGxGJtmgSVjTodqmZDuMa4RkFoFKmqw8kP6tPDP-wSJZk_jOPcn1iKgSt6oT6DmHR3o9_wn6EP7IeVqGOQypW-rh2GzMd9-400?raw=true "Image 2")
 ## Front End Languages
 [![forthebadge](https://img.shields.io/badge/USES-HTML-red)](http://forthebadge.com)
 [![forthebadge](https://img.shields.io/badge/USES-CSS-orange)](http://forthebadge.com)
