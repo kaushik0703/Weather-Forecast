@@ -57,43 +57,43 @@ app.get('/help', (req, res)=> {
     })
 })
 
-app.get('/weather', (req, res)=> {
-    if(!req.query.address && !req.query.latitude && !req.query.longitude){
-        return res.send({
-            error: 'Loading..'
-        })
-        // req.query.address = 'Nanded'
-    }else if(!req.query.address){
+// app.get('/weather', (req, res)=> {
+//     if(!req.query.address && !req.query.latitude && !req.query.longitude){
+//         return res.send({
+//             error: 'Loading..'
+//         })
+//         // req.query.address = 'Nanded'
+//     }else if(!req.query.address){
         
-        location = {}
-        forecast(req.query.longitude, req.query.latitude, (error, ForecastData) => {
-            if(error){
-                return res.send({error})
-            }
-            res.send({
-                forecast: ForecastData,
-                location,
-                address: req.query.address
-            })
-        })
-    }else if(!req.query.longitude && !req.query.latitude){
-        geocode(req.query.address, (error, {longitude, latitude, location} = {}) =>{
-            if(error){
-                return res.send({error})
-            }
-            forecast(longitude, latitude, (error, ForecastData) => {
-                if(error){
-                    return res.send({error})
-                }
-                res.send({
-                    forecast: ForecastData,
-                    location,
-                    address: req.query.address
-                })
-            })
-        })
-    }
-})
+//         location = {}
+//         forecast(req.query.longitude, req.query.latitude, (error, ForecastData) => {
+//             if(error){
+//                 return res.send({error})
+//             }
+//             res.send({
+//                 forecast: ForecastData,
+//                 location,
+//                 address: req.query.address
+//             })
+//         })
+//     }else if(!req.query.longitude && !req.query.latitude){
+//         geocode(req.query.address, (error, {longitude, latitude, location} = {}) =>{
+//             if(error){
+//                 return res.send({error})
+//             }
+//             forecast(longitude, latitude, (error, ForecastData) => {
+//                 if(error){
+//                     return res.send({error})
+//                 }
+//                 res.send({
+//                     forecast: ForecastData,
+//                     location,
+//                     address: req.query.address
+//                 })
+//             })
+//         })
+//     }
+// })
 
 app.get('/products', (req,res) => {
     if(!req.query.search){
