@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
     "start": "node src/1_express.js",
     "dev": "nodemon src/1_express.js -e js,hbs,css"
   },
